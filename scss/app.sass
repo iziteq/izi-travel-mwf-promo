@@ -3,110 +3,115 @@
 body
   min-width: 320px
 
+$colorBlack: #333
 $pageBackground: #00aeef
 
 body
   background: $pageBackground
-  font-family: 'Neue Helvetica W01', 'Helvetica Neue', 'Open Sans', Helvetica, Arial, sans-serif
+  color: $colorBlack
+  font-family: "Neue Helvetica W01", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif
 
-.page-hong-kong
-  %large-font
-    font-size: em-calc(48px)
-    font-weight: 100
-    letter-spacing: 0.07em
-    line-height: 1.25em
+%large-font
+  font-size: em-calc(48px)
+  font-weight: 100
+  letter-spacing: 0.07em
+  line-height: 1.25em
 
-    @media #{$small-only}
-      font-size: em-calc(24px)
-      font-weight: 200
-      line-height: 1.67em
+  @media #{$small-only}
+    font-size: em-calc(24px)
+    font-weight: 200
+    line-height: 1.67em
 
-  %small-font
-    font-size: em-calc(16px)
-    line-height: 1.875em
-    letter-spacing: 0.07em
+%small-font
+  font-size: em-calc(16px)
+  line-height: 1.875em
+  letter-spacing: 0.07em
 
-    @media #{$small-only}
-      font-size: em-calc(13px)
-      line-height: 1.54em
+  @media #{$small-only}
+    font-size: em-calc(13px)
+    line-height: 1.54em
 
-  %small-block
-    border: 3px solid #fff
+%small-block
+  border: 3px solid #fff
 
-  %image-logo
-    background-image: url('../images/logo.png')
-    background-repeat: no-repeat
-    background-size: 215px 35px
+%image-logo
+  background-image: url('../images/logo.png')
+  background-repeat: no-repeat
+  background-size: 235px 55px
 
-    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
-      background-image: url('../images/big/logo.png')
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url('../images/big/logo.png')
 
+%image-eye
+  background-image: url('../images/eye.png')
+  background-repeat: no-repeat
+  background-size: 30px 60px
+
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url('../images/big/eye.png')
+
+%image-phone
+  background-image: url('../images/phone.png')
+  background-repeat: no-repeat
+  background-size: 30px 60px
+
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url('../images/big/phone.png')
+
+%image-play
+  background-image: url('../images/play.png')
+  background-repeat: no-repeat
+  background-size: 30px 60px
+
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url('../images/big/play.png')
+
+.page-florence
   .header-block
-    height: 600px
-    background-image: url('../images/city.png')
+    background-image: url('../images/florence1.jpg')
     background-position: 50% 0
-    background-repeat: no-repeat
+    background-repeat: repeat-x
+    background-size: cover
+    height: 600px
+    position: relative
 
     @media #{$small-only}
-      background: none
-      height: 400px
+      height: 530px
 
     .logo-wrapper
-      line-height: 35px
-      margin: 85px 0 0 0
+      @extend %small-font
+      margin: 3.5em 0 0 0
       padding: 0
-      text-align: center
 
       @media #{$small-only}
-        margin-top: 45px
+        margin-top: 2em
 
       .logo
         @extend %image-logo
         background-position: 0 0
-        display: inline-block
-        height: 35px
+        display: block
+        height: 55px
+        margin: -10px auto 0 auto
         overflow: hidden
         text-indent: -9999px
-        width: 215px
+        width: 235px
 
-    .title
-      @extend %large-font
+    .logo-description
+      @extend %small-font
       color: #fff
-      margin-top: 115px
-      text-align: center
-      height: (1.25em * 3)
+      margin: 3em 0 0 0
+      text-decoration: bold
 
       @media #{$small-only}
-        margin-top: 35px
-        height: (1.67em * 3)
-
-    .small-block-wrapper
-      .small-block
-        @extend %small-block
-        @extend %small-font
-        color: #fff
-        margin: 5px 0 0 33px
-        padding: 5px 10px 5px 15px
-        text-align: left
-        width: 320px
-
-      @media #{$small-only}
+        font-size: em-calc(13px)
+        line-height: 1.5em
+        margin-top: 2em
         text-align: center
 
-        .small-block
-          display: inline-block
-          margin: 25px 0 0
-          width: 270px
-
-  .app-block
-    height: 600px
-    background-image: url('../images/tour.jpg')
-    background-position: 50% 0
-    background-repeat: repeat-x
-    background-size: cover
-
-    @media #{$small-only}
-      height: 400px
+      .logo-description-text
+        font-size: em-calc(20px)
+        line-height: 1.25em
+        text-shadow: 0 0px 6px rgba(0, 0, 0, 0.45)
 
     .title
       @extend %large-font
@@ -115,7 +120,7 @@ body
       height: (1.25em * 3)
       margin-top: 105px
       text-align: center
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5)
+      text-shadow: 0 0px 20px rgba(0, 0, 0, 1)
 
       @media #{$small-only}
         height: (1.67em * 3)
@@ -123,96 +128,228 @@ body
         margin-top: 35px
 
     .custom-button-wrapper
+      .custom-button
+        background: #00aeef
+        border-radius: 25px
+        color: #fff
+        cursor: pointer
+        display: inline-block
+        font-size: em-calc(20px)
+        font-weight: 200
+        letter-spacing: 0.07em
+        line-height: 37px
+        padding: 3px 20px 5px 10px
+        text-align: left
+        width: 230px
+
+        &:before
+          content: ""
+          display: inline-block
+          margin-top: 4px
+          vertical-align: top
+          width: 45px
+
       &.app-button
         text-align: right
+
+        .custom-button
+          &:before
+            @extend %image-play
+            background-position: 0 0
+            height: 30px
+
+          &:hover
+            color: $colorBlack
+
+            &:before
+              background-position: 0 -30px
+
       &.preview-button
         text-align: left
 
-      .custom-button
-        background: #f5681f
-        border-radius: 5px
-        color: #fff
-        display: inline-block
-        font-size: em-calc(27px)
-        font-weight: 200
-        letter-spacing: 0.07em
-        line-height: 1.5em
-        padding: 6px 15px
-        text-align: center
-        text-transform: uppercase
-        width: 330px
+        .custom-button
+          &:before
+            @extend %image-play
+            background-position: 0 0
+            height: 30px
+
+          &:hover
+            color: $colorBlack
+
+            &:before
+              background-position: 0 -30px
 
       @media #{$small-only}
-        &.app-button,
-        &.preview-button
-          text-align: center
+        padding: 20px 0 0 0
 
         .custom-button
           font-size: em-calc(18px)
-          margin-top: 15px
-          padding: 4px 10px
-          width: 230px
+
+        &.app-button, &.preview-button
+          text-align: center
 
     .small-block-wrapper
-      .small-block
-        @extend %small-block
-        @extend %small-font
-        background-color: #00aeef // fallback
-        background-color: rgba(0, 0, 0, 0.4)
-        border: none
-        color: #fff
-        line-height: 1.7em
-        margin: 50px 30px 0 30px
-        padding: 5px 10px 5px 15px
+      bottom: 0
+      left: 0
+      position: absolute
+      right: 0
+      background-color: #fff // fallback
+      background-color: rgba(255, 255, 255, 0.85)
 
-      @media #{$small-only}
+      .small-block
+        @extend %small-font
+        border: none
+        line-height: 1.7em
+        padding: 1em 0
         text-align: center
 
+      @media #{$small-only}
         .small-block
-          display: inline-block
-          margin: 25px 0 0
-          text-align: left
-          width: 270px
+          padding: 0.5em 1em
 
-  .talk-block
-    background-color: #c0c0c0
-    background-image: url('../images/light.png')
+  .app-block
+    position: relative
+    background-color: #949494
+    background-image: url('../images/florence2.jpg')
     background-position: 50% 50%
-    background-repeat: no-repeat
-    background-size: contain
+    background-repeat: repeat-x
+    background-size: cover
     height: 600px
 
     @media #{$small-only}
-      height: 400px
+      background-position: 50% 0
+      height: 480px
 
     .title
       @extend %large-font
       color: #fff
-      margin-top: 205px
+      font-weight: normal
+      height: (1.25em * 3)
+      margin-top: 105px
       text-align: center
+      text-shadow: 0 0px 6px rgba(0, 0, 0, 0.3)
 
       @media #{$small-only}
-        margin-top: 137px
         height: (1.67em * 3)
+        margin-bottom: 0
+        margin-top: 35px
 
-      .bold
-        font-weight: normal
-
-    .small-block-wrapper
-      text-align: center
-
-      .small-block
-        @extend %small-block
-        @extend %small-font
+    .custom-button-wrapper
+      .custom-button
+        background: #00aeef
+        border-radius: 25px
         color: #fff
         display: inline-block
-        margin: 50px 15px 0
-        padding: 5px 15px 5px 15px
-        text-align: center
+        font-size: em-calc(20px)
+        font-weight: 200
+        letter-spacing: 0.07em
+        line-height: 37px
+        padding: 3px 20px 5px 10px
+        text-align: left
+        width: 250px
 
-        @media #{$small-only}
-          margin-top: 20px
+        &:before
+          content: ""
+          display: inline-block
+          margin-left: 3px
+          margin-top: 4px
+          vertical-align: top
+          width: 42px
 
+      &.app-button
+        text-align: right
+
+        .custom-button
+          &:before
+            @extend %image-phone
+            background-position: 0 0
+            height: 30px
+
+          &:hover
+            color: $colorBlack
+
+            &:before
+              background-position: 0 -30px
+
+      &.preview-button
+        text-align: left
+
+        .custom-button
+          &:before
+            @extend %image-eye
+            background-position: 0 0
+            height: 30px
+
+          &:hover
+            color: $colorBlack
+
+            &:before
+              background-position: 0 -30px
+
+      @media #{$small-only}
+        padding: 20px 0 0 0
+
+        .custom-button
+          font-size: em-calc(18px)
+
+        &.app-button, &.preview-button
+          text-align: center
+
+    .small-block-wrapper
+      bottom: 0
+      left: 0
+      position: absolute
+      right: 0
+      background-color: #fff // fallback
+      background-color: rgba(255, 255, 255, 0.85)
+
+      .small-block
+        @extend %small-font
+        border: none
+        line-height: 1.7em
+        padding: 1em 0
+
+      @media #{$small-only}
+        .small-block
+          padding: 0.5em 1em
+
+  .schedule-block
+    padding: 6em 0
+
+    @media #{$small-only}
+      padding: 2em 0 2em 0
+
+    .title
+      @extend %large-font
+      color: #fff
+      font-weight: normal
+      margin: 0
+      text-align: center
+
+    .day-title
+      color: #fff
+      font-size: em-calc(24px)
+      font-weight: normal
+      line-height: 1.25em
+      margin: 2em 0 0 0
+
+      @media #{$small-only}
+        font-size: em-calc(18px)
+
+    .event
+      @extend %small-font
+      margin: 2em 0 0 0
+
+      .event-title
+        color: #fff
+
+      .event-text
+        font-weight: bold
+
+      .event-description
+        font-style: italic
+
+  // From Hong Kong with love
   .about-block
     background: #fff
     border-bottom: 2px solid #e8e8e8
