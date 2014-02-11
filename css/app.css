@@ -4731,240 +4731,345 @@ body {
 
 body {
   background: #00aeef;
+  color: #333333;
   font-family: "Neue Helvetica W01", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif; }
 
-.page-hong-kong .header-block .title, .page-hong-kong .app-block .title, .page-hong-kong .talk-block .title, .page-hong-kong .about-block .title,
-.page-hong-kong .hiw-block .title, .page-hong-kong .footer-block .title {
+.page-florence .header-block .title, .page-florence .app-block .title, .page-florence .schedule-block .title, .page-florence .about-block .title,
+.page-florence .hiw-block .title, .page-florence .footer-block .title {
   font-size: 3em;
   font-weight: 100;
   letter-spacing: 0.07em;
   line-height: 1.25em; }
   @media only screen and (max-width: 767px) {
-    .page-hong-kong .header-block .title, .page-hong-kong .app-block .title, .page-hong-kong .talk-block .title, .page-hong-kong .about-block .title,
-    .page-hong-kong .hiw-block .title, .page-hong-kong .footer-block .title {
+    .page-florence .header-block .title, .page-florence .app-block .title, .page-florence .schedule-block .title, .page-florence .about-block .title,
+    .page-florence .hiw-block .title, .page-florence .footer-block .title {
       font-size: 1.5em;
       font-weight: 200;
       line-height: 1.67em; } }
-.page-hong-kong .header-block .small-block-wrapper .small-block, .page-hong-kong .app-block .small-block-wrapper .small-block, .page-hong-kong .talk-block .small-block-wrapper .small-block {
+
+.page-florence .header-block .logo-wrapper, .page-florence .header-block .logo-description, .page-florence .header-block .small-block-wrapper .small-block, .page-florence .app-block .small-block-wrapper .small-block, .page-florence .schedule-block .event {
   font-size: 1em;
   line-height: 1.875em;
   letter-spacing: 0.07em; }
   @media only screen and (max-width: 767px) {
-    .page-hong-kong .header-block .small-block-wrapper .small-block, .page-hong-kong .app-block .small-block-wrapper .small-block, .page-hong-kong .talk-block .small-block-wrapper .small-block {
+    .page-florence .header-block .logo-wrapper, .page-florence .header-block .logo-description, .page-florence .header-block .small-block-wrapper .small-block, .page-florence .app-block .small-block-wrapper .small-block, .page-florence .schedule-block .event {
       font-size: 0.8125em;
       line-height: 1.54em; } }
-.page-hong-kong .header-block .small-block-wrapper .small-block, .page-hong-kong .app-block .small-block-wrapper .small-block, .page-hong-kong .talk-block .small-block-wrapper .small-block {
-  border: 3px solid white; }
-.page-hong-kong .header-block .logo-wrapper .logo {
+
+.page-florence .header-block .logo-wrapper .logo {
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
-  background-size: 215px 35px; }
+  background-size: 235px 55px; }
   @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-    .page-hong-kong .header-block .logo-wrapper .logo {
+    .page-florence .header-block .logo-wrapper .logo {
       background-image: url("../images/big/logo.png"); } }
-.page-hong-kong .header-block {
-  height: 600px;
-  background-image: url("../images/city.png");
-  background-position: 50% 0;
-  background-repeat: no-repeat; }
-  @media only screen and (max-width: 767px) {
-    .page-hong-kong .header-block {
-      background: none;
-      height: 400px; } }
-  .page-hong-kong .header-block .logo-wrapper {
-    line-height: 35px;
-    margin: 85px 0 0 0;
-    padding: 0;
-    text-align: center; }
-    @media only screen and (max-width: 767px) {
-      .page-hong-kong .header-block .logo-wrapper {
-        margin-top: 45px; } }
-    .page-hong-kong .header-block .logo-wrapper .logo {
-      background-position: 0 0;
-      display: inline-block;
-      height: 35px;
-      overflow: hidden;
-      text-indent: -9999px;
-      width: 215px; }
-  .page-hong-kong .header-block .title {
-    color: white;
-    margin-top: 115px;
-    text-align: center;
-    height: 3.75em; }
-    @media only screen and (max-width: 767px) {
-      .page-hong-kong .header-block .title {
-        margin-top: 35px;
-        height: 5.01em; } }
-  .page-hong-kong .header-block .small-block-wrapper .small-block {
-    color: white;
-    margin: 5px 0 0 33px;
-    padding: 5px 10px 5px 15px;
-    text-align: left;
-    width: 320px; }
-  @media only screen and (max-width: 767px) {
-    .page-hong-kong .header-block .small-block-wrapper {
-      text-align: center; }
-      .page-hong-kong .header-block .small-block-wrapper .small-block {
-        display: inline-block;
-        margin: 25px 0 0;
-        width: 270px; } }
-.page-hong-kong .app-block {
-  height: 600px;
-  background-image: url("../images/tour.jpg");
+
+.page-florence .app-block .custom-button-wrapper.preview-button .custom-button:before {
+  background-image: url("../images/eye.png");
+  background-repeat: no-repeat;
+  background-size: 30px 60px; }
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .page-florence .app-block .custom-button-wrapper.preview-button .custom-button:before {
+      background-image: url("../images/big/eye.png"); } }
+
+.page-florence .app-block .custom-button-wrapper.app-button .custom-button:before {
+  background-image: url("../images/phone.png");
+  background-repeat: no-repeat;
+  background-size: 30px 60px; }
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .page-florence .app-block .custom-button-wrapper.app-button .custom-button:before {
+      background-image: url("../images/big/phone.png"); } }
+
+.page-florence .header-block .custom-button-wrapper.app-button .custom-button:before, .page-florence .header-block .custom-button-wrapper.preview-button .custom-button:before {
+  background-image: url("../images/play.png");
+  background-repeat: no-repeat;
+  background-size: 30px 60px; }
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .page-florence .header-block .custom-button-wrapper.app-button .custom-button:before, .page-florence .header-block .custom-button-wrapper.preview-button .custom-button:before {
+      background-image: url("../images/big/play.png"); } }
+
+.page-florence .header-block {
+  background-image: url("../images/florence1.jpg");
   background-position: 50% 0;
   background-repeat: repeat-x;
-  background-size: cover; }
+  background-size: cover;
+  height: 600px;
+  position: relative; }
   @media only screen and (max-width: 767px) {
-    .page-hong-kong .app-block {
-      height: 400px; } }
-  .page-hong-kong .app-block .title {
+    .page-florence .header-block {
+      height: 530px; } }
+  .page-florence .header-block .logo-wrapper {
+    margin: 3.5em 0 0 0;
+    padding: 0; }
+    @media only screen and (max-width: 767px) {
+      .page-florence .header-block .logo-wrapper {
+        margin-top: 2em; } }
+    .page-florence .header-block .logo-wrapper .logo {
+      background-position: 0 0;
+      display: block;
+      height: 55px;
+      margin: -10px auto 0 auto;
+      overflow: hidden;
+      text-indent: -9999px;
+      width: 235px; }
+  .page-florence .header-block .logo-description {
+    color: white;
+    margin: 3em 0 0 0;
+    text-decoration: bold; }
+    @media only screen and (max-width: 767px) {
+      .page-florence .header-block .logo-description {
+        font-size: 0.8125em;
+        line-height: 1.5em;
+        margin-top: 2em;
+        text-align: center; } }
+    .page-florence .header-block .logo-description .logo-description-text {
+      font-size: 1.25em;
+      line-height: 1.25em;
+      text-shadow: 0 0px 6px rgba(0, 0, 0, 0.45); }
+  .page-florence .header-block .title {
     color: white;
     font-weight: normal;
     height: 3.75em;
     margin-top: 105px;
     text-align: center;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); }
+    text-shadow: 0 0px 20px black; }
     @media only screen and (max-width: 767px) {
-      .page-hong-kong .app-block .title {
+      .page-florence .header-block .title {
         height: 5.01em;
         margin-bottom: 0;
         margin-top: 35px; } }
-  .page-hong-kong .app-block .custom-button-wrapper.app-button {
-    text-align: right; }
-  .page-hong-kong .app-block .custom-button-wrapper.preview-button {
-    text-align: left; }
-  .page-hong-kong .app-block .custom-button-wrapper .custom-button {
-    background: #f5681f;
-    border-radius: 5px;
+  .page-florence .header-block .custom-button-wrapper .custom-button {
+    background: #00aeef;
+    border-radius: 25px;
     color: white;
+    cursor: pointer;
     display: inline-block;
-    font-size: 1.6875em;
+    font-size: 1.25em;
     font-weight: 200;
     letter-spacing: 0.07em;
-    line-height: 1.5em;
-    padding: 6px 15px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 330px; }
+    line-height: 37px;
+    padding: 3px 20px 5px 10px;
+    text-align: left;
+    width: 230px; }
+    .page-florence .header-block .custom-button-wrapper .custom-button:before {
+      content: "";
+      display: inline-block;
+      margin-top: 4px;
+      vertical-align: top;
+      width: 45px; }
+  .page-florence .header-block .custom-button-wrapper.app-button {
+    text-align: right; }
+    .page-florence .header-block .custom-button-wrapper.app-button .custom-button:before {
+      background-position: 0 0;
+      height: 30px; }
+    .page-florence .header-block .custom-button-wrapper.app-button .custom-button:hover {
+      color: #333333; }
+      .page-florence .header-block .custom-button-wrapper.app-button .custom-button:hover:before {
+        background-position: 0 -30px; }
+  .page-florence .header-block .custom-button-wrapper.preview-button {
+    text-align: left; }
+    .page-florence .header-block .custom-button-wrapper.preview-button .custom-button:before {
+      background-position: 0 0;
+      height: 30px; }
+    .page-florence .header-block .custom-button-wrapper.preview-button .custom-button:hover {
+      color: #333333; }
+      .page-florence .header-block .custom-button-wrapper.preview-button .custom-button:hover:before {
+        background-position: 0 -30px; }
   @media only screen and (max-width: 767px) {
-    .page-hong-kong .app-block .custom-button-wrapper.app-button, .page-hong-kong .app-block .custom-button-wrapper.preview-button {
+    .page-florence .header-block .custom-button-wrapper {
+      padding: 20px 0 0 0; }
+      .page-florence .header-block .custom-button-wrapper .custom-button {
+        font-size: 1.125em; }
+      .page-florence .header-block .custom-button-wrapper.app-button, .page-florence .header-block .custom-button-wrapper.preview-button {
+        text-align: center; } }
+  .page-florence .header-block .small-block-wrapper {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85); }
+    .page-florence .header-block .small-block-wrapper .small-block {
+      border: none;
+      line-height: 1.7em;
+      padding: 1em 0;
       text-align: center; }
-    .page-hong-kong .app-block .custom-button-wrapper .custom-button {
-      font-size: 1.125em;
-      margin-top: 15px;
-      padding: 4px 10px;
-      width: 230px; } }
-  .page-hong-kong .app-block .small-block-wrapper .small-block {
-    background-color: #00aeef;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: none;
-    color: white;
-    line-height: 1.7em;
-    margin: 50px 30px 0 30px;
-    padding: 5px 10px 5px 15px; }
-  @media only screen and (max-width: 767px) {
-    .page-hong-kong .app-block .small-block-wrapper {
-      text-align: center; }
-      .page-hong-kong .app-block .small-block-wrapper .small-block {
-        display: inline-block;
-        margin: 25px 0 0;
-        text-align: left;
-        width: 270px; } }
-.page-hong-kong .talk-block {
-  background-color: silver;
-  background-image: url("../images/light.png");
+    @media only screen and (max-width: 767px) {
+      .page-florence .header-block .small-block-wrapper .small-block {
+        padding: 0.5em 1em; } }
+.page-florence .app-block {
+  position: relative;
+  background-color: #949494;
+  background-image: url("../images/florence2.jpg");
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-repeat: repeat-x;
+  background-size: cover;
   height: 600px; }
   @media only screen and (max-width: 767px) {
-    .page-hong-kong .talk-block {
-      height: 400px; } }
-  .page-hong-kong .talk-block .title {
+    .page-florence .app-block {
+      background-position: 50% 0;
+      height: 480px; } }
+  .page-florence .app-block .title {
     color: white;
-    margin-top: 205px;
-    text-align: center; }
+    font-weight: normal;
+    height: 3.75em;
+    margin-top: 105px;
+    text-align: center;
+    text-shadow: 0 0px 6px rgba(0, 0, 0, 0.3); }
     @media only screen and (max-width: 767px) {
-      .page-hong-kong .talk-block .title {
-        margin-top: 137px;
-        height: 5.01em; } }
-    .page-hong-kong .talk-block .title .bold {
-      font-weight: normal; }
-  .page-hong-kong .talk-block .small-block-wrapper {
-    text-align: center; }
-    .page-hong-kong .talk-block .small-block-wrapper .small-block {
-      color: white;
+      .page-florence .app-block .title {
+        height: 5.01em;
+        margin-bottom: 0;
+        margin-top: 35px; } }
+  .page-florence .app-block .custom-button-wrapper .custom-button {
+    background: #00aeef;
+    border-radius: 25px;
+    color: white;
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 200;
+    letter-spacing: 0.07em;
+    line-height: 37px;
+    padding: 3px 20px 5px 10px;
+    text-align: left;
+    width: 250px; }
+    .page-florence .app-block .custom-button-wrapper .custom-button:before {
+      content: "";
       display: inline-block;
-      margin: 50px 15px 0;
-      padding: 5px 15px 5px 15px;
-      text-align: center; }
-      @media only screen and (max-width: 767px) {
-        .page-hong-kong .talk-block .small-block-wrapper .small-block {
-          margin-top: 20px; } }
-.page-hong-kong .about-block {
+      margin-left: 3px;
+      margin-top: 4px;
+      vertical-align: top;
+      width: 42px; }
+  .page-florence .app-block .custom-button-wrapper.app-button {
+    text-align: right; }
+    .page-florence .app-block .custom-button-wrapper.app-button .custom-button:before {
+      background-position: 0 0;
+      height: 30px; }
+    .page-florence .app-block .custom-button-wrapper.app-button .custom-button:hover {
+      color: #333333; }
+      .page-florence .app-block .custom-button-wrapper.app-button .custom-button:hover:before {
+        background-position: 0 -30px; }
+  .page-florence .app-block .custom-button-wrapper.preview-button {
+    text-align: left; }
+    .page-florence .app-block .custom-button-wrapper.preview-button .custom-button:before {
+      background-position: 0 0;
+      height: 30px; }
+    .page-florence .app-block .custom-button-wrapper.preview-button .custom-button:hover {
+      color: #333333; }
+      .page-florence .app-block .custom-button-wrapper.preview-button .custom-button:hover:before {
+        background-position: 0 -30px; }
+  @media only screen and (max-width: 767px) {
+    .page-florence .app-block .custom-button-wrapper {
+      padding: 20px 0 0 0; }
+      .page-florence .app-block .custom-button-wrapper .custom-button {
+        font-size: 1.125em; }
+      .page-florence .app-block .custom-button-wrapper.app-button, .page-florence .app-block .custom-button-wrapper.preview-button {
+        text-align: center; } }
+  .page-florence .app-block .small-block-wrapper {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85); }
+    .page-florence .app-block .small-block-wrapper .small-block {
+      border: none;
+      line-height: 1.7em;
+      padding: 1em 0; }
+    @media only screen and (max-width: 767px) {
+      .page-florence .app-block .small-block-wrapper .small-block {
+        padding: 0.5em 1em; } }
+.page-florence .schedule-block {
+  padding: 6em 0; }
+  @media only screen and (max-width: 767px) {
+    .page-florence .schedule-block {
+      padding: 2em 0 2em 0; } }
+  .page-florence .schedule-block .title {
+    color: white;
+    font-weight: normal;
+    margin: 0;
+    text-align: center; }
+  .page-florence .schedule-block .day-title {
+    color: white;
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.25em;
+    margin: 2em 0 0 0; }
+    @media only screen and (max-width: 767px) {
+      .page-florence .schedule-block .day-title {
+        font-size: 1.125em; } }
+  .page-florence .schedule-block .event {
+    margin: 2em 0 0 0; }
+    .page-florence .schedule-block .event .event-title {
+      color: white; }
+    .page-florence .schedule-block .event .event-text {
+      font-weight: bold; }
+    .page-florence .schedule-block .event .event-description {
+      font-style: italic; }
+.page-florence .about-block {
   background: white;
   border-bottom: 2px solid #e8e8e8; }
-.page-hong-kong .hiw-block {
+.page-florence .hiw-block {
   background: white; }
-.page-hong-kong .about-block,
-.page-hong-kong .hiw-block {
+.page-florence .about-block,
+.page-florence .hiw-block {
   padding-bottom: 90px; }
   @media only screen and (max-width: 767px) {
-    .page-hong-kong .about-block,
-    .page-hong-kong .hiw-block {
+    .page-florence .about-block,
+    .page-florence .hiw-block {
       padding-bottom: 50px; } }
-  .page-hong-kong .about-block .title,
-  .page-hong-kong .hiw-block .title {
+  .page-florence .about-block .title,
+  .page-florence .hiw-block .title {
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 60px;
     text-align: center; }
     @media only screen and (max-width: 767px) {
-      .page-hong-kong .about-block .title,
-      .page-hong-kong .hiw-block .title {
+      .page-florence .about-block .title,
+      .page-florence .hiw-block .title {
         margin-top: 30px; } }
-  .page-hong-kong .about-block .image,
-  .page-hong-kong .hiw-block .image {
+  .page-florence .about-block .image,
+  .page-florence .hiw-block .image {
     background-position: 50% 0;
     background-repeat: no-repeat;
     height: 120px;
     margin-top: 30px;
     width: 100%; }
     @media only screen and (max-width: 767px) {
-      .page-hong-kong .about-block .image,
-      .page-hong-kong .hiw-block .image {
+      .page-florence .about-block .image,
+      .page-florence .hiw-block .image {
         margin-top: 20px; } }
-    .page-hong-kong .about-block .image.image-audio-guide,
-    .page-hong-kong .hiw-block .image.image-audio-guide {
+    .page-florence .about-block .image.image-audio-guide,
+    .page-florence .hiw-block .image.image-audio-guide {
       background-image: url("../images/audio_guide.png"); }
-    .page-hong-kong .about-block .image.image-cms,
-    .page-hong-kong .hiw-block .image.image-cms {
+    .page-florence .about-block .image.image-cms,
+    .page-florence .hiw-block .image.image-cms {
       background-image: url("../images/cms.png"); }
-    .page-hong-kong .about-block .image.image-opas,
-    .page-hong-kong .hiw-block .image.image-opas {
+    .page-florence .about-block .image.image-opas,
+    .page-florence .hiw-block .image.image-opas {
       background-image: url("../images/opas.png"); }
-  .page-hong-kong .about-block .image2,
-  .page-hong-kong .hiw-block .image2 {
+  .page-florence .about-block .image2,
+  .page-florence .hiw-block .image2 {
     background-position: 50% 0;
     background-repeat: no-repeat;
     height: 100px;
     margin-top: 30px;
     width: 100%; }
     @media only screen and (max-width: 767px) {
-      .page-hong-kong .about-block .image2,
-      .page-hong-kong .hiw-block .image2 {
+      .page-florence .about-block .image2,
+      .page-florence .hiw-block .image2 {
         margin-top: 20px; } }
-    .page-hong-kong .about-block .image2.image-record,
-    .page-hong-kong .hiw-block .image2.image-record {
+    .page-florence .about-block .image2.image-record,
+    .page-florence .hiw-block .image2.image-record {
       background-image: url("../images/record.png"); }
-    .page-hong-kong .about-block .image2.image-publish,
-    .page-hong-kong .hiw-block .image2.image-publish {
+    .page-florence .about-block .image2.image-publish,
+    .page-florence .hiw-block .image2.image-publish {
       background-image: url("../images/publish.png"); }
-    .page-hong-kong .about-block .image2.image-announce,
-    .page-hong-kong .hiw-block .image2.image-announce {
+    .page-florence .about-block .image2.image-announce,
+    .page-florence .hiw-block .image2.image-announce {
       background-image: url("../images/announce.png"); }
-  .page-hong-kong .about-block .small-title,
-  .page-hong-kong .hiw-block .small-title {
+  .page-florence .about-block .small-title,
+  .page-florence .hiw-block .small-title {
     color: #00aeef;
     font-size: 1.5em;
     font-weight: normal;
@@ -4972,24 +5077,24 @@ body {
     margin-bottom: 25px;
     margin-top: 15px;
     text-align: center; }
-  .page-hong-kong .about-block .text,
-  .page-hong-kong .hiw-block .text {
+  .page-florence .about-block .text,
+  .page-florence .hiw-block .text {
     font-size: 16px;
     line-height: 1.9em;
     padding: 0 10px; }
-.page-hong-kong .footer-block .title {
+.page-florence .footer-block .title {
   color: white;
   margin-top: 60px;
   margin-bottom: 80px;
   text-align: center; }
   @media only screen and (max-width: 767px) {
-    .page-hong-kong .footer-block .title {
+    .page-florence .footer-block .title {
       margin-top: 30px;
       margin-bottom: 40px; } }
-  .page-hong-kong .footer-block .title .bold {
+  .page-florence .footer-block .title .bold {
     font-weight: normal; }
-  .page-hong-kong .footer-block .title a {
+  .page-florence .footer-block .title a {
     color: white;
     text-decoration: none; }
-    .page-hong-kong .footer-block .title a:hover {
+    .page-florence .footer-block .title a:hover {
       text-decoration: underline; }

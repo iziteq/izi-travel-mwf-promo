@@ -8,49 +8,112 @@ html lang="en"
     title IZI.travel. A simple and free audioguide solution.
     link href="/assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"
     link rel="stylesheet" href="css/app.css"
+    link rel="stylesheet" href="vendor/fancybox/source/jquery.fancybox.css"
+    script type="text/javascript" src="vendor/jquery/jquery-1.9.0.min.js"
+    script type="text/javascript" src="vendor/jquery/jquery-1.10.1.min.js"
+    script type="text/javascript" src="vendor/fancybox/source/jquery.fancybox.js"
+    script type="text/javascript" src="js/app.js"
     link href='//fast.fonts.net/cssapi/b7fd390a-6bd0-4f4c-a80f-8b8e357903b1.css' type='text/css' rel='stylesheet'
 
   body
-    .page-hong-kong
+    .page-florence
       .header-block
         .row
-          .large-6.large-offset-3.columns
+          .large-4.large-offset-1.columns
             h1.logo-wrapper
-              span.logo IZI.travel
+              span.logo
+                | IZI.travel
+          .large-7.columns
+            .logo-description
+              .logo-description-text
+                | A brand new way of creating audio guides. It’s&nbsp;easy,&nbsp;fast&nbsp;and&nbsp;free!
         .row
           .large-10.large-offset-1.columns
             h2.title
-              | A brand new way of creating audio guides. It's&nbsp;easy, fast&nbsp;and&nbsp;free!
-        .row
-          .large-6.large-offset-6.columns
-            .small-block-wrapper
-              .small-block
-                | Visit our stand for mini-workshop
-                br
-                | at Museums and the Web Asia,
-                br
-                | Hong Kong, December 8-12, 2013
-
-      .app-block
-        .row
-          .large-8.large-offset-2.columns
-            h2.title Explore Hong Kong with our audio guide app — OPAS
+              | Museum and city audio guides in one single mobile app!
         .row
           .large-6.columns
             .custom-button-wrapper.app-button
-              a.custom-button href="//mtg.travel/17448f3c-a794-4bdb-9ee3-9e061029a73b" Get the app
+              a.custom-button data-role="play-video-en" Watch video
           .large-6.columns
             .custom-button-wrapper.preview-button
-              a.custom-button href="//izi.travel/browse/17448f3c-a794-4bdb-9ee3-9e061029a73b" Preview the tour
+              a.custom-button data-role="play-video-it" Guarda video
+        .small-block-wrapper
+          .row
+            .large-7.large-offset-3.columns
+              .small-block
+                | Visit our table for mini-workshop at Museums&nbsp;and&nbsp;the&nbsp;Web Florence 2014, February&nbsp;18–21
+      .app-block
         .row
           .large-8.large-offset-2.columns
-            .small-block-wrapper
+            h2.title
+              | Explore Florence with our audio guide app — OPAS
+        .row
+          .large-6.columns
+            .custom-button-wrapper.app-button
+              a.custom-button href="//mtg.travel/9c2c33aa-a700-4902-8c53-e5e7b86e7905.mtg" Get the app
+          .large-6.columns
+            .custom-button-wrapper.preview-button
+              a.custom-button href="//izi.travel/browse/9c2c33aa-a700-4902-8c53-e5e7b86e7905" Preview the tour
+        .small-block-wrapper
+          .row
+            .large-9.large-offset-2.columns
               .small-block
-                | 1. Get the App
+                | 1. Get the app
                 br
-                | 2. Download tour «Hong Kong Kowloon» for offline use
+                | 2. Download tour “Florence: the Renaissance capital of Italy” for offline use
                 br
                 | 3. Enjoy audio guide
+      .schedule-block
+        .row
+          .large-8.large-offset-2.columns
+            h2.title
+              | Agenda
+        .row
+          .large-8.large-offset-2.columns
+            h3.day-title
+              | Wednesday, 19 February
+        .row
+          .large-8.large-offset-2.columns
+            .event
+              .event-title
+                | 10:00AM - 11:30AM, Salone dei Cinquecento
+              .event-text
+                | Mobilizing the Smart City
+              .event-description
+                | Museum professionals Lada Mitroshenkova (Borodino Museum), Claire Sussums (Museum of London) and mobile professionals Ilaria D’Uva (D’Uva Workshop), Daniele Jallà (Assessorato alla Cultura, Città di Torino), and Giovanna Barni (CoopCulture) respond to the keynote presentation by Rob Stein (Dallas Museum of Art).
+        .row
+          .large-8.large-offset-2.columns
+            .event
+              .event-title
+                | 12:30PM - 2:00PM, Sala d'Arme, Session 1
+              .event-text
+                | Bridging the gap between museum and city experience with open access mobile guide platforms: a case study from Moscow.
+              .event-description
+                | Lada Mitroshenkova, Russia
+        .row
+          .large-8.large-offset-2.columns
+            .event
+              .event-title
+                | 7:00PM - 8:30PM, Sala d'Arme, Session 2
+              .event-text
+                | Aligning heritage and culture with tourism; the creation of an integrated audio guide experience in Alkmaar.
+              .event-description
+                | René Mijs, The Netherlands
+        .row
+          .large-8.large-offset-2.columns
+            h3.day-title
+              | Thursday, 20 February
+        .row
+          .large-8.large-offset-2.columns
+            .event
+              .event-title
+                | 5:00PM - 6:30PM, Salone dei Cinquecento
+              .event-text
+                | Mobile Best Practice Parade: Opening the Door to Mobile
+              .event-description
+                | Alex Palin, The Netherlands, Alex Tourski, The Netherlands
+      // From Hong Kong with love
       .about-block
         .row
           .large-12.columns
