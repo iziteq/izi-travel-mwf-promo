@@ -4793,11 +4793,11 @@ body {
   background-position: 50% 0;
   background-repeat: repeat-x;
   background-size: cover;
-  height: 600px;
+  height: 800px;
   position: relative; }
   @media only screen and (max-width: 767px) {
     .page-florence .header-block {
-      height: 530px; } }
+      height: 650px; } }
   .page-florence .header-block .logo-wrapper {
     margin: 3.5em 0 0 0;
     padding: 0; }
@@ -4825,19 +4825,20 @@ body {
     .page-florence .header-block .logo-description .logo-description-text {
       font-size: 1.25em;
       line-height: 1.25em;
-      text-shadow: 0 0px 6px rgba(0, 0, 0, 0.45); }
+      text-shadow: 0 0px 5px #00719b; }
   .page-florence .header-block .title {
     color: white;
-    font-weight: normal;
+    font-weight: bold;
     height: 3.75em;
-    margin-top: 105px;
+    margin-top: 160px;
     text-align: center;
     text-shadow: 0 0px 20px black; }
     @media only screen and (max-width: 767px) {
       .page-florence .header-block .title {
-        height: 5.01em;
+        height: 3.9em;
+        line-height: 1.3em;
         margin-bottom: 0;
-        margin-top: 35px; } }
+        margin-top: 100px; } }
   .page-florence .header-block .custom-button-wrapper .custom-button {
     background: #00aeef;
     border-radius: 25px;
@@ -4898,29 +4899,30 @@ body {
       .page-florence .header-block .small-block-wrapper .small-block {
         padding: 0.5em 1em; } }
 .page-florence .app-block {
-  position: relative;
   background-color: #949494;
   background-image: url("../images/florence2.jpg");
   background-position: 50% 50%;
   background-repeat: repeat-x;
   background-size: cover;
-  height: 600px; }
+  height: 800px;
+  position: relative; }
   @media only screen and (max-width: 767px) {
     .page-florence .app-block {
       background-position: 50% 0;
-      height: 480px; } }
+      height: 650px; } }
   .page-florence .app-block .title {
     color: white;
-    font-weight: normal;
+    font-weight: bold;
     height: 3.75em;
-    margin-top: 105px;
+    margin-top: 225px;
     text-align: center;
     text-shadow: 0 0px 6px rgba(0, 0, 0, 0.3); }
     @media only screen and (max-width: 767px) {
       .page-florence .app-block .title {
-        height: 5.01em;
+        height: 3.9em;
+        line-height: 1.3em;
         margin-bottom: 0;
-        margin-top: 35px; } }
+        margin-top: 135px; } }
   .page-florence .app-block .custom-button-wrapper .custom-button {
     background: #00aeef;
     border-radius: 25px;
