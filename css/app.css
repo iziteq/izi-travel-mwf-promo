@@ -4895,6 +4895,8 @@ body {
       line-height: 1.7em;
       padding: 1em 0;
       text-align: center; }
+      .page-florence .header-block .small-block-wrapper .small-block .nowrap {
+        white-space: nowrap; }
     @media only screen and (max-width: 767px) {
       .page-florence .header-block .small-block-wrapper .small-block {
         padding: 0.5em 1em; } }
